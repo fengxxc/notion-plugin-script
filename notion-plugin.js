@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         notion plugin
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  add notion outline view
 // @author       fengxxc
 // @match        https://www.notion.so/*
