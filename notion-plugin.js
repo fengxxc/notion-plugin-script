@@ -49,7 +49,7 @@
 
 	function getOutlineBox(outlineHTMLs) {
 		return `
-			<div id="outline_view" style="position: fixed; top: 47px; right: 16px; z-index: 2; background-color: #f0f8ffcc; padding: 9px;">
+			<div id="outline_view" style="position: fixed; top: 47px; right: 16px; z-index: 2; background-color: #f0f8ffcc; padding: 9px; height: calc(100% - 47px); overflow-y: auto;">
 				${outlineHTMLs.join('')}
 			</div>
 		`
