@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         notion plugin
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  add notion outline view
 // @author       fengxxc
 // @match        https://www.notion.so/*
@@ -49,7 +49,7 @@
 
 	function getOutlineBox(outlineHTMLs) {
 		return `
-			<div id="outline_view" style="position: fixed; top: 47px; right: 16px; z-index: 2; background-color: #f0f8ffcc; padding: 9px; height: calc(100% - 47px); overflow-y: auto;">
+			<div id="outline_view" style="position: fixed; top: 47px; right: 16px; z-index: 2; background-color: #f0f8ffcc; padding: 9px; height: calc(100% - 47px); overflow-y: auto; max-width: 33%;">
 				${outlineHTMLs.join('')}
 			</div>
 		`
